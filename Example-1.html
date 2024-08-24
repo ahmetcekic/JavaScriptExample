@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Topla() {
+            var sayi1 = Number(document.getElementById("sayi1").value);
+            var sayi2 = Number(document.getElementById("sayi2").value);
+        //alert(sayi1)
+        //alert(sayi2)
+
+        //console.log("sayi1 =>" + sayi1)
+        //console.log("sayi2 =>" + sayi2)
+
+        document.getElementById("sonuc").innerHTML = "Toplamının Sonucu: " + (sayi1+sayi2)
+        
+    }
+    function Çıkar() {
+            var sayi1 = Number(document.getElementById("sayi1").value);
+            var sayi2 = Number(document.getElementById("sayi2").value);
+      
+
+        document.getElementById("sonuc").innerHTML = "Çıkarımın Sonucu: " + (sayi1-sayi2)
+        
+    }
+    function Çarp() {
+            var sayi1 = Number(document.getElementById("sayi1").value);
+            var sayi2 = Number(document.getElementById("sayi2").value);
+      
+
+        document.getElementById("sonuc").innerHTML = "Çarpımın Sonucu: " + (sayi1*sayi2)
+        
+    }
+    function Böl() {
+            var sayi1 = Number(document.getElementById("sayi1").value);
+            var sayi2 = Number(document.getElementById("sayi2").value);
+
+      
+
+        //document.getElementById("sonuc").innerHTML = "Bölünen Sonuc: " + (sayi1/sayi2)
+        if (sayi2>0) 
+        {
+            document.getElementById("sonuc").innerHTML = "Bölünen Sonuc: " + (sayi1/sayi2)
+        }
+        else
+        alert("Sıfırdan farklı bir değer girin")
+    }
+
+
+    </script>
+</head>
+<body>
+    <h1>Hesap Makinesi</h1>
+    <label for="">1.Sayı</label>
+    <input type="text" id="sayi1">
+    <br>
+    <br>
+    <label for="">2.Sayı</label>
+    <input type="text" id="sayi2">
+    <br><br>
+    <input type="button" onclick="Topla()" value="Topla" id="btnTopla">
+    <input type="button" onclick="Çıkar()" value="Çıkar" id="btnÇıkar">
+    <input type="button" onclick="Çarp()" value="Çarp" id="btnÇarp">
+    <input type="button" onclick="Böl()" value="Böl" id="btnBöl">
+    <br><br>
+
+    <div id = "sonuc"></div>
+    
+    
+</body>
+</html>
