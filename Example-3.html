@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alan ve Çevre Hesaplama</h1>
+    <label for="">1. Kenar</label>
+    <input type="number" id="sayi1">
+    <br><br>
+    <label for="">2. Kenar</label>
+    <input type="number" id="sayi2">
+    <button id="hesapla">hesapla</button>
+   
+    <br><br>
+    <label for="">Hipotenüs: </label>
+    <label for="" id="Hipotenüs"></label>
+    <br>
+    <br>
+
+    <script>
+         var hesapla = document.getElementById("hesapla");
+        hesapla.onclick = function()
+        {
+            var sayi1 =Number(document.getElementById("sayi1").value);
+            var sayi2 =Number(document.getElementById("sayi2").value);
+
+            var kare1 = math.pow(sayi1, 2);
+            var kare2 = math.pow(sayi2, 2);
+
+            var toplam = kare1+kare2;
+
+            var sonuc = math.sqrt(toplam)
+            document.getElementById("hipotenüs").innerHTML = sonuc;
+
+
+
+
+      
+       
+        }
+    </script>
+</body>
+</html>
